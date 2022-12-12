@@ -1,0 +1,48 @@
+.ShopOwner {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  height: 100%;
+  color: #333;
+  box-shadow: -3px 3px #e563a0, -2px 2px orange, -1px 1px orange;
+  border: 1px solid #9f0707;
+  background-color: #6ea6ba;
+}
+
+.Coustomer {
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1rem;
+  height: 100%;
+  color: #333;
+  box-shadow: -3px 3px #e563a0, -2px 2px orange, -1px 1px orange;
+  border: 1px solid #9f0707;
+  background-color: #6ea6ba;
+}
+
+.Coustomer h1 {
+  font-size: 1.5rem;
+  color: rgb(3, 3, 3);
+  font-weight: 700;
+}
+
+.ShopOwner h1 {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.ShopOwner img {
+  width: 30%;
+}
+
+.Coustomer img {
+  width: 30%;
+}
