@@ -1,10 +1,9 @@
 import "./App.css";
-import Login_Button from "./Pages/Rajendra_Folder/Login_Button";
+import AllRoutes from "./Routes/AllRoutes";
 function App() {
   return (
     <>
-      {/* <AllRoutes /> */}
-      <Login_Button />
+      <AllRoutes />
     </>
   );
 }

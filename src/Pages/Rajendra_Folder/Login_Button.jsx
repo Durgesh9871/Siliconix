@@ -13,6 +13,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import coustomer from "./Images/Coustomer.png";
 import Owner from "./Images/Owner.png";
 import "./Login_Button.css";
@@ -26,6 +27,7 @@ const Login_Button = () => {
   } = useDisclosure();
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
+  const Navigate = useNavigate();
 
   return (
     <>
@@ -38,13 +40,27 @@ const Login_Button = () => {
           <ModalHeader>Create a Account</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <div className="ShopOwner" colorScheme="teal">
+            <div className="ShopOwner">
               <img src={Owner} alt="Owner" />
-              <h1>Signup as Admin</h1>
+              <button
+                className="pushable"
+                onClick={() => {
+                  Navigate("/admin_signup");
+                }}
+              >
+                <span className="front">Signup as Admin</span>
+              </button>
             </div>
-            <div className="Coustomer" colorScheme="teal">
+            <div className="Coustomer">
               <img src={coustomer} alt="Coutomer" />
-              <h1>Signup as Buyer</h1>
+              <button
+                className="pushable"
+                onClick={() => {
+                  Navigate("/buyer_signup");
+                }}
+              >
+                <span className="front">Signup as Buyer</span>
+              </button>
             </div>
           </ModalBody>
           <ModalFooter>
@@ -73,23 +89,23 @@ const Login_Button = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Create your account</ModalHeader>
+          <ModalHeader>Login to your Account </ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
-              <FormLabel>First name</FormLabel>
-              <Input ref={initialRef} placeholder="First name" />
+              <FormLabel>E-mail</FormLabel>
+              <Input ref={initialRef} placeholder="E-mail" type={"email"} />
             </FormControl>
 
             <FormControl mt={4}>
-              <FormLabel>Last name</FormLabel>
-              <Input placeholder="Last name" />
+              <FormLabel>Password</FormLabel>
+              <Input placeholder="Password" type={"password"} />
             </FormControl>
           </ModalBody>
 
           <ModalFooter>
             <Button colorScheme="blue" mr={3}>
-              Save
+              Login
             </Button>
             <Button onClick={secondOnClose}>Cancel</Button>
           </ModalFooter>
