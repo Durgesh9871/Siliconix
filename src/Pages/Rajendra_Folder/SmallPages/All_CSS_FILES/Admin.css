@@ -97,6 +97,32 @@
   font-weight: 800;
 }
 
+/* PAGINATION PAGE STYLLING PART OF THE WEBSITE */
+
+.PaginationButton {
+  text-align: center;
+}
+
+/* THIS IS PRODUCT PAGE DISIGNING PART OF THE WEBSITE */
+
+.SingleImages {
+  border: 2px solid red;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.SingleImages img {
+  width: 50%;
+  height: 10rem;
+  margin: auto;
+}
+
+.AllSingleProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  border-radius: 20px;
+}
 /* ALL MEDIA QUERY HAS BEEN WRITTEN OVER HERE */
 
 @media only screen and (max-width: 850px) {
