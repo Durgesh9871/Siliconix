@@ -1,11 +1,13 @@
 import { Button, FormControl, Input } from "@chakra-ui/react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./All_CSS_FILES/Admin_Signup.css";
 
 const Admin_Signup = () => {
   const [AdminDetails, setAdminDetails] = useState({
     name: "",
     businessEmail: "",
+    images: "",
     phoneNo: "",
     password: "",
     confirmPassword: "",
@@ -16,6 +18,8 @@ const Admin_Signup = () => {
     const { name, value } = e.target;
     setAdminDetails({ ...AdminDetails, [name]: value });
   };
+
+  const Navigate = useNavigate();
 
   const HandleSubmit = async (e) => {
     e.preventDefault();
@@ -42,6 +46,7 @@ const Admin_Signup = () => {
             name,
             businessEmail,
             phoneNo,
+            images: "",
             password,
             confirmPassword,
             type,
@@ -53,11 +58,13 @@ const Admin_Signup = () => {
           name: "",
           businessEmail: "",
           phoneNo: "",
+          images: "",
           password: "",
           confirmPassword: "",
           type: "ADMIN",
         });
         alert("Your Details are Added Successfully");
+        Navigate("/admin");
       }
     }
   };
@@ -72,6 +79,17 @@ const Admin_Signup = () => {
               placeholder="Name"
               name="name"
               value={AdminDetails.name}
+              onChange={HandleChange}
+              isRequired
+            />
+          </FormControl>
+          {/* ********************************************* */}
+          <FormControl isRequired className="FormControl">
+            <Input
+              type="text"
+              placeholder="Avatar URL"
+              name="images"
+              value={AdminDetails.images}
               onChange={HandleChange}
               isRequired
             />

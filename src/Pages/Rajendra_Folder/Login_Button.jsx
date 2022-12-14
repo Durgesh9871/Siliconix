@@ -12,22 +12,48 @@ import {
   ModalOverlay,
   useDisclosure,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import coustomer from "./Images/Coustomer.png";
 import Owner from "./Images/Owner.png";
 import "./Login_Button.css";
+import { CheckLogin } from "../../Redux/Auth_Reducer/Action";
 
 const Login_Button = () => {
+  const dispatch = useDispatch();
+  const { Login } = useSelector((val) => val);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {
     isOpen: secondIsOpen,
     onOpen: secondOnOpen,
     onClose: secondOnClose,
   } = useDisclosure();
-  const initialRef = React.useRef(null);
-  const finalRef = React.useRef(null);
+
   const Navigate = useNavigate();
+
+  const [loginData, setLoginData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const HandleChange = (e) => {
+    const { name, value } = e.target;
+    setLoginData({ ...loginData, [name]: value });
+  };
+
+  const HandleLoginSubmit = (e) => {
+    e.preventDefault();
+    if (!loginData.email && !loginData.password) {
+      alert("Please Fill The Details");
+    } else {
+      dispatch(CheckLogin(loginData));
+      setLoginData({
+        email: "",
+        password: "",
+      });
+    }
+  };
 
   return (
     <>
@@ -79,36 +105,55 @@ const Login_Button = () => {
           </ModalFooter>
         </ModalContent>
       </Modal>
+
       {/* Login BUtton of the Page  */}
 
-      <Modal
-        initialFocusRef={initialRef}
-        finalFocusRef={finalRef}
-        isOpen={secondIsOpen}
-        onClose={secondOnClose}
-      >
+      <Modal isOpen={secondIsOpen} onClose={secondOnClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Login to your Account </ModalHeader>
           <ModalCloseButton />
-          <ModalBody pb={6}>
-            <FormControl>
-              <FormLabel>E-mail</FormLabel>
-              <Input ref={initialRef} placeholder="E-mail" type={"email"} />
-            </FormControl>
+          <form onSubmit={HandleLoginSubmit}>
+            <ModalBody pb={6}>
+              <FormControl>
+                <FormLabel>E-mail</FormLabel>
+                <Input
+                  placeholder="E-mail"
+                  type={"email"}
+                  name="email"
+                  value={loginData.email}
+                  onChange={HandleChange}
+                />
+              </FormControl>
 
-            <FormControl mt={4}>
-              <FormLabel>Password</FormLabel>
-              <Input placeholder="Password" type={"password"} />
-            </FormControl>
-          </ModalBody>
+              <FormControl mt={4}>
+                <FormLabel>Password</FormLabel>
+                <Input
+                  placeholder="Password"
+                  type={"password"}
+                  name="password"
+                  value={loginData.password}
+                  onChange={HandleChange}
+                />
+              </FormControl>
+            </ModalBody>
 
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3}>
-              Login
-            </Button>
-            <Button onClick={secondOnClose}>Cancel</Button>
-          </ModalFooter>
+            <ModalFooter>
+              <Button
+                colorScheme="blue"
+                mr={3}
+                type="submit"
+                onClick={() => {
+                  loginData.email && loginData.password
+                    ? secondOnClose()
+                    : null;
+                }}
+              >
+                Login
+              </Button>
+              <Button onClick={secondOnClose}>Cancel</Button>
+            </ModalFooter>
+          </form>
         </ModalContent>
       </Modal>
     </>

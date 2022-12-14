@@ -2,15 +2,18 @@ import { Button, FormControl, Input } from "@chakra-ui/react";
 import "./All_CSS_FILES/Admin_Signup.css";
 
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Buyer_Signup = () => {
+  const Navigate = useNavigate();
+
   const [AdminDetails, setAdminDetails] = useState({
     name: "",
     businessEmail: "",
     phoneNo: "",
     password: "",
     confirmPassword: "",
-    type: "ADMIN",
+    type: "BUYER",
   });
 
   const HandleChange = (e) => {
@@ -18,7 +21,7 @@ const Buyer_Signup = () => {
     setAdminDetails({ ...AdminDetails, [name]: value });
   };
 
-  const HandleSubmit = (e) => {
+  const HandleSubmit = async (e) => {
     e.preventDefault();
     if (AdminDetails.password !== AdminDetails.confirmPassword) {
       alert("Password Don't Match");
@@ -27,7 +30,40 @@ const Buyer_Signup = () => {
     } else if (AdminDetails.phoneNo.length !== 10) {
       alert("Number is Invalid");
     } else {
-      console.log(AdminDetails);
+      const { name, businessEmail, phoneNo, password, confirmPassword, type } =
+        AdminDetails;
+
+      // WE ARE MAKING THE REQUEST TO ADD THE DATA TO FIREBASE ALL THESE DETAILS ARE VERY IMPORTANT AND YOUR HAVE TO WRITE ALL THESE DETAILS
+      const res = await fetch(
+        "https://unit-5-project-contact-form-default-rtdb.asia-southeast1.firebasedatabase.app/contact_form_unit_five_project.json", // THIS IS MAIN URL AND YOUR DATABASE WHERE YOUR DATA IS STORED YOU ARE MAKEING POST REQUEST TO POST DATA AND TO GET DATA MAKE A GET REQUEST.
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            businessEmail,
+            phoneNo,
+            password,
+            confirmPassword,
+            type,
+          }),
+        }
+      );
+      if (res) {
+        setAdminDetails({
+          name: "",
+          businessEmail: "",
+          phoneNo: "",
+          password: "",
+          confirmPassword: "",
+          type: "ADMIN",
+        });
+        alert("Your Details are Added Successfully");
+        Navigate("/");
+      }
+      console.log(res);
     }
   };
   return (
