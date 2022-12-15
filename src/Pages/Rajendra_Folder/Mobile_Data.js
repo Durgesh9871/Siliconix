@@ -1,13 +1,13 @@
-const Mobile_Data = {
+export const Mobile_Data = {
   Mobile: [
     {
       id: 21,
       categories: "",
-      title: "Apple iPhone 12, 64GB, Black - Fully Unlocked (Renewed)",
+      title: "Apple iPhone 12",
       price: "60000",
       brand: "apple",
       description:
-        "The product is refurbished, fully functional, and in good condition. Backed by the 90-day Amazon Renewed Guarantee.",
+        "The product is refurbished and has , 64GB, Black - Fully Unlocked (Renewed) Processer.",
       color: "black",
       discount: "8000",
       reviews: ["Great Product", "Value for money"],
@@ -29,7 +29,7 @@ const Mobile_Data = {
     {
       id: 22,
       categories: "",
-      title: "Apple iPhone 13 Pro Max, 128GB, Gold",
+      title: "Apple iPhone 13 Pro Max",
       price: "90000",
       brand: "apple",
       description:
@@ -55,7 +55,7 @@ const Mobile_Data = {
     {
       id: 23,
       categories: "",
-      title: "Apple iPhone 11 [128GB, White]",
+      title: "Apple iPhone 11",
       price: "35000",
       brand: "apple",
       description:
@@ -81,7 +81,7 @@ const Mobile_Data = {
     {
       id: 24,
       categories: "",
-      title: "Apple iPhone SE (2nd Generation)",
+      title: "Apple iPhone SE ",
       price: "20000",
       brand: "apple",
       description:
