@@ -1,0 +1,13 @@
+.MenuLink{
+    margin-top: "50px";
+    margin-bottom: 100px;
+    color: blue;
+}
+@media (max-width: 500px) {
+    .navbar{
+        display: grid;
+        grid-template-columns: 68px 86px 10fr 0px 75px;
+        gap: "10px";
+        padding:"2rem 3rem"
+    }
+}
