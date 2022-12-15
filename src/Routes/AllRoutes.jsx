@@ -4,6 +4,8 @@ import Login_Button from "../Pages/Rajendra_Folder/Login_Button";
 import AdminPage from "../Pages/Rajendra_Folder/SmallPages/AdminPage";
 import Admin_Signup from "../Pages/Rajendra_Folder/SmallPages/Admin_Signup";
 import Buyer_Signup from "../Pages/Rajendra_Folder/SmallPages/Buyer_Signup";
+import CartPage from "./Pages/Danish_Pinjari_Folder/WishList";
+
 const AllRoutes = () => {
   return (
     <>
