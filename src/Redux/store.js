@@ -4,21 +4,14 @@ import {
   compose,
   combineReducers,
 } from "redux";
-
 import thunk from "redux-thunk";
-import { authReducer } from "./Auth_Reducer/reducer";
-import { orderReducer } from "./Orders_Reducer/reducer";
-import { productReduer } from "./Product_Reducer/reducer";
-import { savedReducer } from "./Saved_Reducer/reducer";
-
-const rootReducer = combineReducers({
-  auth: authReducer,
-  order : orderReducer,
-  product : productReduer,
-  saved : savedReducer
-});
+import { orderReducer } from "./Admin_Product/reducer";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const rootReducer = combineReducers({
+  order: orderReducer,
+});
 
 export const store = createStore(
   rootReducer,

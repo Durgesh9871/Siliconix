@@ -123,6 +123,27 @@
   gap: 1rem;
   border-radius: 20px;
 }
+
+.crud_Button {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.EditButton {
+  font-size: 2.5rem;
+  color: green;
+}
+
+.DeleteButton {
+  font-size: 2.5rem;
+  color: red;
+}
+
+.ChangeInputbox {
+  margin-bottom: 1rem;
+}
+
 /* ALL MEDIA QUERY HAS BEEN WRITTEN OVER HERE */
 
 @media only screen and (max-width: 850px) {

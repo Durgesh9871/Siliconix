@@ -8,7 +8,7 @@ import "./All_CSS_FILES/Admin.css";
 const AdminPage = () => {
   return (
     <>
-      <div id="navbar"></div>
+      <div id="navbar">this is Navbar</div>
       <div className="SearchBar">
         <SearchBar />
       </div>
