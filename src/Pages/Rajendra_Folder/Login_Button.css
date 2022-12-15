@@ -8,9 +8,12 @@
   margin-bottom: 1rem;
   height: 100%;
   color: #333;
-  box-shadow: -3px 3px #e563a0, -2px 2px orange, -1px 1px orange;
-  border: 1px solid #9f0707;
-  background-color: #6ea6ba;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 
 .Coustomer {
@@ -22,18 +25,21 @@
   border-radius: 1rem;
   height: 100%;
   color: #333;
-  box-shadow: -3px 3px #e563a0, -2px 2px orange, -1px 1px orange;
-  border: 1px solid #9f0707;
-  background-color: #6ea6ba;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 
-.Coustomer h1 {
+.Coustomer button {
   font-size: 1.5rem;
   color: rgb(3, 3, 3);
   font-weight: 700;
 }
 
-.ShopOwner h1 {
+.ShopOwner button {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
   font-weight: 700;
@@ -45,4 +51,36 @@
 
 .Coustomer img {
   width: 30%;
+}
+
+.pushable {
+  background: hsl(222deg 100% 36% / 51%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(209deg 42% 56%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 450px) {
+  .pushable {
+    width: 60%;
+  }
+  .front {
+    font-size: 1rem;
+    padding: 15px;
+  }
 }

@@ -1,4 +1,4 @@
-const Mobile_Data = {
+export const Mobile_Data = {
   Mobile: [
     {
       id: 21,

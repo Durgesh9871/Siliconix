@@ -12,20 +12,48 @@ import {
   ModalOverlay,
   useDisclosure,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import coustomer from "./Images/Coustomer.png";
 import Owner from "./Images/Owner.png";
 import "./Login_Button.css";
+import { CheckLogin } from "../../Redux/Auth_Reducer/Action";
 
 const Login_Button = () => {
+  const dispatch = useDispatch();
+  const { Login } = useSelector((val) => val);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {
     isOpen: secondIsOpen,
     onOpen: secondOnOpen,
     onClose: secondOnClose,
   } = useDisclosure();
-  const initialRef = React.useRef(null);
-  const finalRef = React.useRef(null);
+
+  const Navigate = useNavigate();
+
+  const [loginData, setLoginData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const HandleChange = (e) => {
+    const { name, value } = e.target;
+    setLoginData({ ...loginData, [name]: value });
+  };
+
+  const HandleLoginSubmit = (e) => {
+    e.preventDefault();
+    if (!loginData.email && !loginData.password) {
+      alert("Please Fill The Details");
+    } else {
+      dispatch(CheckLogin(loginData));
+      setLoginData({
+        email: "",
+        password: "",
+      });
+    }
+  };
 
   return (
     <>
@@ -38,13 +66,27 @@ const Login_Button = () => {
           <ModalHeader>Create a Account</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <div className="ShopOwner" colorScheme="teal">
+            <div className="ShopOwner">
               <img src={Owner} alt="Owner" />
-              <h1>Signup as Admin</h1>
+              <button
+                className="pushable"
+                onClick={() => {
+                  Navigate("/admin_signup");
+                }}
+              >
+                <span className="front">Signup as Admin</span>
+              </button>
             </div>
-            <div className="Coustomer" colorScheme="teal">
+            <div className="Coustomer">
               <img src={coustomer} alt="Coutomer" />
-              <h1>Signup as Buyer</h1>
+              <button
+                className="pushable"
+                onClick={() => {
+                  Navigate("/buyer_signup");
+                }}
+              >
+                <span className="front">Signup as Buyer</span>
+              </button>
             </div>
           </ModalBody>
           <ModalFooter>
@@ -63,36 +105,55 @@ const Login_Button = () => {
           </ModalFooter>
         </ModalContent>
       </Modal>
+
       {/* Login BUtton of the Page  */}
 
-      <Modal
-        initialFocusRef={initialRef}
-        finalFocusRef={finalRef}
-        isOpen={secondIsOpen}
-        onClose={secondOnClose}
-      >
+      <Modal isOpen={secondIsOpen} onClose={secondOnClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Create your account</ModalHeader>
+          <ModalHeader>Login to your Account </ModalHeader>
           <ModalCloseButton />
-          <ModalBody pb={6}>
-            <FormControl>
-              <FormLabel>First name</FormLabel>
-              <Input ref={initialRef} placeholder="First name" />
-            </FormControl>
+          <form onSubmit={HandleLoginSubmit}>
+            <ModalBody pb={6}>
+              <FormControl>
+                <FormLabel>E-mail</FormLabel>
+                <Input
+                  placeholder="E-mail"
+                  type={"email"}
+                  name="email"
+                  value={loginData.email}
+                  onChange={HandleChange}
+                />
+              </FormControl>
 
-            <FormControl mt={4}>
-              <FormLabel>Last name</FormLabel>
-              <Input placeholder="Last name" />
-            </FormControl>
-          </ModalBody>
+              <FormControl mt={4}>
+                <FormLabel>Password</FormLabel>
+                <Input
+                  placeholder="Password"
+                  type={"password"}
+                  name="password"
+                  value={loginData.password}
+                  onChange={HandleChange}
+                />
+              </FormControl>
+            </ModalBody>
 
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3}>
-              Save
-            </Button>
-            <Button onClick={secondOnClose}>Cancel</Button>
-          </ModalFooter>
+            <ModalFooter>
+              <Button
+                colorScheme="blue"
+                mr={3}
+                type="submit"
+                onClick={() => {
+                  loginData.email && loginData.password
+                    ? secondOnClose()
+                    : null;
+                }}
+              >
+                Login
+              </Button>
+              <Button onClick={secondOnClose}>Cancel</Button>
+            </ModalFooter>
+          </form>
         </ModalContent>
       </Modal>
     </>
