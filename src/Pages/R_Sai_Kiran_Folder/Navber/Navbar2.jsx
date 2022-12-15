@@ -1,28 +1,33 @@
 import { Box , Link ,PopoverTrigger,PopoverContent,PopoverArrow,PopoverHeader,PopoverBody,PopoverCloseButton,Button,Popover, Menu, MenuButton, MenuList, MenuItem} from '@chakra-ui/react'
-
+import "./Navbar2.css"
 
 
 function Navbar2(){
-    return (<Box bg='#0046be' w='100%' p={4} color='white' display={"flex"} justifyContent="space-between" paddingRight={"30px"} paddingLeft="30px">
+    return (
+    <Box bg='#0046be' w='100%' p={4} color='white'border={"2px solid red"} display={"flex"} justifyContent="space-between" paddingRight={"30px"} paddingLeft="30px">
     <Box display={"flex"} gap="15px">
-        <Menu>
-        <MenuButton as={Button} colorScheme='#0046be' >
-        Holiday Deals
-       </MenuButton>
-       <MenuList bg={"#0046be"} color="black" marginTop={"8px"}>
-    <MenuItem>Back Friday Deals Right Now</MenuItem>
-    <MenuItem>Gift Ideas</MenuItem>
-    <MenuItem>Gift Carts</MenuItem>
-    <MenuItem>Explore Holiday Inspirations</MenuItem>
-    <MenuItem>Attend a Workshop</MenuItem>
-  </MenuList>
-        </Menu>
+    <Link>
+        <Popover colorScheme="red">
+                  <PopoverTrigger>
+                    <Button color="white" bg="#0046bf" colorScheme='white' variant='link' >Holiday Deals</Button>
+                  </PopoverTrigger>
+                  <PopoverContent>
+                    <PopoverArrow />
+                    <PopoverHeader color="blue">Back Friday Deals Right Now</PopoverHeader>
+                    <PopoverHeader color="blue">Gift Ideas</PopoverHeader>
+                    <PopoverHeader color="blue">Gift Carts</PopoverHeader>
+                    <PopoverHeader color="blue">Explore Holiday Inspirations</PopoverHeader>
+                    <PopoverBody color="blue">Close<PopoverCloseButton /></PopoverBody>
+                  </PopoverContent>
+                  
+                </Popover>
+        </Link>
         <Link>Top Deals</Link>
-        <Link>Deal of the Day</Link>
-        <Link>Totaltech Membership</Link>
-        <Link>Credit Cards</Link>
-        <Link>Gift Cards</Link>
-        <Link>Gift Ideas</Link>
+        <Link id="Link1">Deal of the Day</Link>
+        <Link id='Link2'>Totaltech Membership</Link>
+        <Link id="Link3">Credit Cards</Link>
+        <Link id="Link4">Gift Cards</Link>
+        <Link id="Link5">Gift Ideas</Link>
         <Link>
         <Popover >
                   <PopoverTrigger>
