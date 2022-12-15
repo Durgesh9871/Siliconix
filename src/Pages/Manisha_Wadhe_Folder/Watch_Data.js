@@ -18,11 +18,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002ld.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_bd.jpg",
               },
            ],
@@ -46,11 +46,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032cv1d.jpg",
               },
            ],
@@ -74,11 +74,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514034_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514034_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514034cv1d.jpg",
               },
            ],
@@ -102,11 +102,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116cv1d.jpg",
               },
            ],
@@ -130,11 +130,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453259_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453259_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453259cv1d.jpg",
               },
            ],
@@ -158,11 +158,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510156_rd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510156ld.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510156cv1d.jpg",
               },
            ],
@@ -186,11 +186,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464485_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464485cv2d.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464485_bd.jpg",
               },
            ],
@@ -214,11 +214,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437592_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437592cv2d.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437592cv1d.jpg",
               },
            ],
@@ -242,11 +242,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6348/6348809_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6348/6348809_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6348/6348809cv11d.jpg",
               },
            ],
@@ -270,11 +270,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426937_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426937_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426937cv2d.jpg",
               },
            ],
@@ -298,11 +298,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448040_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448040_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448040_bd.jpg",
               },
            ],
@@ -326,11 +326,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464606_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464606cv12d.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464606cv15d.jpg",
               },
            ],
@@ -354,11 +354,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592cv13d.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592cv15d.jpg",
               },
            ],
@@ -382,11 +382,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464589_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464589cv12d.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464589cv15d.jpg",
               },
            ],
@@ -410,11 +410,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464611_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464611cv11d.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464611cv14d.jpg",
               },
            ],
@@ -438,11 +438,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517840_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517840_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517840_bd.jpg",
               },
            ],
@@ -467,11 +467,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484733_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484733ld.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484733_bd.jpg",
               },
            ],
@@ -495,11 +495,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475138_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475138_rd.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475138_bd.jpg",
               },
            ],
@@ -523,11 +523,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517838_sd.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517838ld.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517838_bd.jpg",
               },
            ],
@@ -551,11 +551,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521322ld.jpg",
               },
               {
-                imageSide:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521322cv13d.jpg",
               },
               {
-                imageBack:
+                imageFront:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521322cv12d.jpg",
               },
            ],
