@@ -4,8 +4,7 @@ const Watch_Data ={
             id: 81,
             categories: "",
             title: "Fitbit - Sense Advanced Health Smartwatch - Graphite",
-            price: 249.95,
-            realPrice:400,
+            price: "249.95",
             brand: "Fitbit",
             description:
              "The Fitbit Sense is a stylish smartwatch to help you cope with the stress of modern life.",
@@ -19,11 +18,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002ld.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_bd.jpg",
               },
            ],
@@ -33,8 +32,7 @@ const Watch_Data ={
             id: 82,
             categories: "",
             title: "Fitbit - Versa 4 Fitness Smartwatch - Graphite",
-            price: 229.95,
-            realPrice:450,
+            price: "229.95",
             brand: "Fitbit",
             description:
              "The Fitbit Sense is a stylish smartwatch to help you cope with the stress of modern life.",
@@ -48,11 +46,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032cv1d.jpg",
               },
            ],
@@ -62,8 +60,7 @@ const Watch_Data ={
             id: 83,
             categories: "",
             title: "Fitbit - Sense 2 Advanced Health Smartwatch - Graphite",
-            price: 299.95,
-            realPrice:500,
+            price: "299.95",
             brand: "Fitbit",
             description:
              "The Fitbit Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -77,11 +74,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514034_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514034_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514034cv1d.jpg",
               },
            ],
@@ -91,8 +88,7 @@ const Watch_Data ={
             id: 84,
             categories: "",
             title: "Fitbit - Charge 5 Advanced Fitness & Health Tracker - Graphite",
-            price: 149.95,
-            realPrice:300,
+            price: "149.95",
             brand: "Fitbit",
             description:
               "The Fitbit Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -106,11 +102,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116cv1d.jpg",
               },
            ],
@@ -120,8 +116,7 @@ const Watch_Data ={
             id: 85,
             categories: "",
             title: "Fitbit - Ace 3 Activity Tracker for Kids - Black/ Sport Red",
-            price: 79.95,
-            realPrice:100,
+            price: "79.95",
             brand: "Fitbit",
             description:
               "The Fitbit Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -135,11 +130,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453259_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453259_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453259cv1d.jpg",
               },
            ],
@@ -149,8 +144,7 @@ const Watch_Data ={
             id: 86,
             categories: "",
             title: "Amazfit - GTS 4 Mini Smartwatch - Mint Blue",
-            price: 119.99,
-            realPrice:300,
+            price: "119.99",
             brand: "Amazfit",
             description:
               "The Amazfit Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -164,11 +158,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510156_rd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510156ld.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510156cv1d.jpg",
               },
            ],
@@ -178,8 +172,7 @@ const Watch_Data ={
             id: 87,
             categories: "",
             title: "Amazfit - T-Rex Pro Smartwatch Polycarbonate - Steel Blue",
-            price: 159.99,
-            realPrice:400,
+            price: "159.99",
             brand: "Amazfit",
             description:
               "The Amazfit Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -193,11 +186,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464485_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464485cv2d.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464485_bd.jpg",
               },
            ],
@@ -207,8 +200,7 @@ const Watch_Data ={
             id: 88,
             categories: "",
             title: "Garmin - vivofit jr. 3 Kids Fitness Activity Tracker - Lilac Floral",
-            price: 89.99,
-            realPrice:300,
+            price: "89.99",
             brand: "Garmin",
             description:
               "The Garmin Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -222,11 +214,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437592_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437592cv2d.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437592cv1d.jpg",
               },
            ],
@@ -236,8 +228,7 @@ const Watch_Data ={
             id: 89,
             categories: "",
             title: "Garmin - Forerunner 45S GPS Smartwatch 39mm Fiber-Reinforced Polymer - Iris",
-            price: 169.99,
-            realPrice:500,
+            price: "169.99",
             brand: "Garmin",
             description:
               "The Garmin Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -251,11 +242,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6348/6348809_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6348/6348809_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6348/6348809cv11d.jpg",
               },
            ],
@@ -265,8 +256,7 @@ const Watch_Data ={
             id: 90,
             categories: "",
             title: "Garmin - Venu Sq GPS Smartwatch 33mm Fiber-Reinforced Polymer - Orchid",
-            price: 199.99,
-            realPrice:600,
+            price: "199.99",
             brand: "Garmin",
             description:
               "The Garmin Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -280,11 +270,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426937_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426937_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426937cv2d.jpg",
               },
            ],
@@ -294,8 +284,7 @@ const Watch_Data ={
             id: 91,
             categories: "",
             title: "Garmin - Lily Sport Smartwatch 34mm Fiber-Reinforced Polymer - Midnight Orchid",
-            price: 199.99,
-            realPrice:400,
+            price: "199.99",
             brand: "Garmin",
             description:
               "The Garmin Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -309,11 +298,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448040_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448040_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448040_bd.jpg",
               },
            ],
@@ -323,8 +312,7 @@ const Watch_Data ={
             id: 92,
             categories: "",
             title: "Garmin - Lily Sport Smartwatch 34mm Fiber-Reinforced Polymer - Midnight Orchid",
-            price: 199.99,
-            realPrice:600,
+            price: "199.99",
             brand: "Samsung",
             description:
               "The Samsung Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -338,11 +326,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464606_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464606cv12d.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464606cv15d.jpg",
               },
            ],
@@ -352,8 +340,7 @@ const Watch_Data ={
             id: 93,
             categories: "",
             title: "Samsung - Galaxy Watch4 Classic Stainless Steel Smartwatch 46mm BT - Silver",
-            price: 379.99,
-            realPrice:800,
+            price: "379.99",
             brand: "Samsung",
             description:
               "The Samsung Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -367,11 +354,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592cv13d.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592cv15d.jpg",
               },
            ],
@@ -381,8 +368,7 @@ const Watch_Data ={
             id: 94,
             categories: "",
             title: "Samsung - Galaxy Watch4 Classic Stainless Steel Smartwatch 46mm LTE - Silver",
-            price: 429.99,
-            realPrice:800,
+            price: "429.99",
             brand: "Samsung",
             description:
               "The Samsung Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -396,11 +382,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464589_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464589cv12d.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464589cv15d.jpg",
               },
            ],
@@ -410,8 +396,7 @@ const Watch_Data ={
             id: 95,
             categories: "",
             title: "Samsung - Galaxy Watch4 Aluminum Smartwatch 40mm LTE - Silver",
-            price: 249.99,
-            realPrice:500,
+            price: "249.99",
             brand: "Samsung",
             description:
               "The Samsung Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -425,11 +410,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464611_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464611cv11d.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464611cv14d.jpg",
               },
            ],
@@ -439,8 +424,7 @@ const Watch_Data ={
             id: 96,
             categories: "",
             title: "Citizen - CZ Smart 44mm Gray IP Stainless Steel Hybrid Heart Rate Smartwatch with Gray IP Stainless Steel Bracelet - Gray",
-            price: 395.00,
-            realPrice:800,
+            price: "395.00",
             brand: "Citizen",
             description:
               "The Citizen Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -454,11 +438,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517840_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517840_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517840_bd.jpg",
               },
            ],
@@ -469,8 +453,7 @@ const Watch_Data ={
             id: 97,
             categories: "",
             title: "Citizen - CZ Smart 44mm Black IP Stainless Steel Case Hybrid Heart Rate Smartwatch with Silicone Strap - Green",
-            price: 350.00,
-            realPrice:700,
+            price: "350.00",
             brand: "Citizen",
             description:
               "The Citizen Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -484,11 +467,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484733_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484733ld.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484733_bd.jpg",
               },
            ],
@@ -498,8 +481,7 @@ const Watch_Data ={
             id: 98,
             categories: "",
             title: "Citizen - CZ Smartwatch 46mm Stainless Steel Case - Gold",
-            price: 395.00,
-            realPrice:700,
+            price: "395.00",
             brand: "Citizen",
             description:
               "The Citizen Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -513,11 +495,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475138_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475138_rd.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475138_bd.jpg",
               },
            ],
@@ -527,8 +509,7 @@ const Watch_Data ={
             id: 99,
             categories: "",
             title: "Citizen - CZ Smart 44mm Gold-tone IP Stainless Steel Hybrid Heart Rate Smartwatch with Gold-Tone IP Stainless Steel Bracelet - Gold",
-            price: 425.00,
-            realPrice:900,
+            price: "425.00",
             brand: "Citizen",
             description:
               "The Citizen Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -542,11 +523,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517838_sd.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517838ld.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517838_bd.jpg",
               },
            ],
@@ -556,8 +537,7 @@ const Watch_Data ={
             id: 100,
             categories: "",
             title: "Citizen - CZ Smart 44mm Gold-tone IP Stainless Steel Hybrid Heart Rate Smartwatch with Gold-Tone IP Stainless Steel Bracelet - Gold",
-            price: 150.00,
-            realPrice:900,
+            price: "150.00",
             brand: "Michael Kors",
             description:
               "The Michael Kors Sense is a stylish smartwatch to help you cope with the stress of modern life, water Proof, long battery life",
@@ -571,11 +551,11 @@ const Watch_Data ={
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521322ld.jpg",
               },
               {
-                imageFront:
+                imageSide:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521322cv13d.jpg",
               },
               {
-                imageFront:
+                imageBack:
                   "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521322cv12d.jpg",
               },
            ],
