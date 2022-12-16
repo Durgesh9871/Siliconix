@@ -1,7 +1,7 @@
 import { Flex, Spacer, Input , Box, Heading, useDisclosure, Button, Center, Switch, useColorMode,Link,AccordionButton,AccordionItem, Accordion,AccordionPanel,InputGroup, InputRightElement, ButtonGroup, Grid, GridItem,Image, Divider, AccordionIcon} from '@chakra-ui/react'
 import { AiOutlineAppstore, AiOutlineMenu , AiOutlineShoppingCart} from "react-icons/ai";
 import {BsSearch} from "react-icons/bs"
-
+import {StarIcon} from "@chakra-ui/icons"
 import {
     Drawer,
     DrawerBody,
@@ -20,10 +20,10 @@ function Navbar1(){
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
     return(
-      <Box  bg="#0046be">
-        <Grid id="navbar" templateColumns='68px 86px 10fr 7fr 75px' gap={6} padding="1rem 3rem" alignItems={'center'}> 
-          <Image src="https://files.slack.com/files-pri/T049YSPNG02-F04F4HE4LHH/profilepicturemaker_1_.png" width={"100%"}  />
-          <Button ref={btnRef} leftIcon={<AiOutlineMenu/>}   colorScheme='#0046be' style={{fontSize:"25px" , fontWeight: "500"}} size='lg' onClick={onOpen}>Menu
+      <Box  bg="#0046be" >
+        <Grid className='top-nav' alignItems={'center'} padding="1rem 3rem"> 
+          <Image src="https://files.slack.com/files-pri/T049YSPNG02-F04F4HE4LHH/profilepicturemaker_1_.png"   />
+          <Button className='top-btn' ref={btnRef} leftIcon={<AiOutlineMenu size={"25px"}/>}   colorScheme='#0046be' style={{fontSize:"20px"}}  onClick={onOpen}><b>Menu</b>
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -388,8 +388,10 @@ function Navbar1(){
     <Input bg={"white"} placeholder="Search" />
     <InputRightElement children={<BsSearch color='green.500' /> }  />
   </InputGroup>
-          
-          <Button leftIcon={<AiOutlineShoppingCart/>} colorScheme='#0046be' style={{fontSize:"25px" , fontWeight: "500"}} >Cart</Button>
+          <Box textAlign={"right"}>
+            <Button className='top-btn' leftIcon={<StarIcon size={"25px"} />} colorScheme='#0046be'  style={{fontSize:"20px"}}><b>Aiea</b></Button>
+          </Box>
+          <Button className='top-btn' leftIcon={<AiOutlineShoppingCart size={"25px"} />} colorScheme='#0046be'  style={{fontSize:"20px"}}><b>Cart</b></Button>
         </Grid>
       </Box>
     )

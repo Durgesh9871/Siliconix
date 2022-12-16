@@ -1,5 +1,11 @@
 import React from "react";
-import {Link} from "@chakra-ui/react"
+import {Box, Link} from "@chakra-ui/react"
+;
+import { RiFacebookLine } from 'react-icons/ri';
+import { AiOutlineInstagram ,AiFillYoutube} from 'react-icons/ai';
+import { GrLinkedinOption } from 'react-icons/gr';
+import { FaPinterestP } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 
 
 
@@ -7,10 +13,10 @@ import {Link} from "@chakra-ui/react"
 function Footer() {
     return (
       <>
-        <div style={{ backgroundColor: "#f4f6f9" , marginTop:"60px" }}>
-          <div style={{ display: "flex", padding:"20px" }}>
-            <div style={{ width: "66%", height: "320px" }}>
-              <div
+        <Box style={{ backgroundColor: "#f4f6f9" , marginTop:"60px" }}>
+          <Box style={{ display: "flex", padding:"20px" }}>
+            <Box style={{ width: "66%", height: "320px" }}>
+              <Box
                 style={{
                   display: "grid",
                   gridTemplateColumns: "repeat(3, auto)",
@@ -19,7 +25,7 @@ function Footer() {
                   marginTop: "10px",
                 }}
               >
-                <div style={{ textAlign: "left" }}>
+                <Box style={{ textAlign: "left" }}>
                   <b href="" style={{ textDecoration: "none", color: "black" }}>
                   Order & Purchases
                   </b>{" "}
@@ -42,9 +48,9 @@ function Footer() {
                   <br />
                   <Link fontSize={"12px"} color="blue">Gift Cards</Link>
                   <br />
-                </div>
+                </Box>
   
-                <div style={{ textAlign: "left" }}>
+                <Box style={{ textAlign: "left" }}>
                   <b href="" style={{ textDecoration: "none", color: "black" }}>
                   Support & Services
                   </b>{" "}
@@ -63,8 +69,8 @@ function Footer() {
                   <br />
                   <Link fontSize={"12px"} color="blue">Haul Away & Recycling</Link>
                   <br />
-                </div>
-                <div style={{ textAlign: "left" }}>
+                </Box>
+                <Box style={{ textAlign: "left" }}>
                   <b href="" style={{ textDecoration: "none", color: "black" }}>
                   Partnerships
                   </b>{" "}
@@ -82,8 +88,8 @@ function Footer() {
                   <Link fontSize={"12px"} color="blue">Best Buy Business</Link>
                   <br />
                 
-                </div>
-                <div style={{ textAlign: "left" }}>
+                </Box>
+                <Box style={{ textAlign: "left" }}>
                   <b style={{ textDecoration: "none", color: "black" }}>
                   Payment Options
                   </b>
@@ -94,8 +100,8 @@ function Footer() {
                   <br />
                   <Link fontSize={"12px"} color="blue">Lease to Own</Link>
                   <br />
-                </div>
-                <div style={{ textAlign: "left" }}>
+                </Box>
+                <Box style={{ textAlign: "left" }}>
                   <b  style={{ textDecoration: "none", color: "black" }}>
                   Rewards & Membership
                   </b>{" "}
@@ -108,8 +114,8 @@ function Footer() {
                   <br />
                   <Link fontSize={"12px"} color="blue">Member Offers</Link>
                   <br />
-                </div>
-                <div style={{ textAlign: "left" }}>
+                </Box>
+                <Box style={{ textAlign: "left" }}>
                   <b style={{ textDecoration: "none", color: "black" }}>
                   About Best Buy
                   </b>{" "}
@@ -122,10 +128,10 @@ function Footer() {
                   <br />
                   <Link fontSize={"12px"} color="blue">Discover & Learn</Link>
                   <br />
-                </div>
-              </div>
-            </div>
-            <div
+                </Box>
+              </Box>
+            </Box>
+            <Box
               style={{
                 textAlign: "left",
                 marginLeft: "10%",
@@ -138,7 +144,7 @@ function Footer() {
                 backgroundColor:"white"
               }}
             >
-              <div
+              <Box
                 style={{
                   fontSize: "12px",
                   fontWeight: "600",
@@ -147,7 +153,7 @@ function Footer() {
                 }}
               >
                 <Link color={"blue"}>Sign in or Create Account</Link>
-              </div>
+              </Box>
               <br/>
               <b style={{ fontSize: "15px", width: "40%" }}>
               Get the latest deals and more.
@@ -172,41 +178,41 @@ function Footer() {
               >
                 Signup
               </button>
-              <div style={{ display: "flex", justifyContent: "start"  , gap:"35px" , marginTop:"10px"}}>
-                <a href="https://www.facebook.com/BestBuyCanada"  style={{textDecoration:"none" , color:"inherit"  }}>
-                 
-                </a>
-                <a href="https://www.instagram.com/accounts/login/?next=/bestbuycanada/"  style={{textDecoration:"none" , color:"inherit"  }}>
-                  
-                </a>
-                <a href="https://www.linkedin.com/company/best-buy/"  style={{textDecoration:"none" , color:"inherit"  }}>
-                  
-                </a>
-                <a href="https://www.pinterest.com/bestbuycanada/"  style={{textDecoration:"none" , color:"inherit"  }}>
-                  
-                </a>
-                <a href="https://twitter.com/bestbuycanada"  style={{textDecoration:"none" , color:"inherit"  }}>
-                 
-                </a>
-                <a href="https://www.youtube.com/user/CanadaBestBuy"  style={{textDecoration:"none" , color:"inherit"  }}>
-                  
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              borderTop: "1px solid #e7ecf3",
-              marginTop: "30px",
-              textAlign: "left",
-              fontSize: "12px",
-              marginLeft: "50px",
-              padding:"10px"
-            }}
-          >
-            <div style={{marginTop:"10px"}}>
+              <Box style={{ display: "flex", justifyContent: "start"  , gap:"35px" , marginTop:"10px"}}>
+              <a href="https://www.facebook.com/BestBuyCanada" target={"_blank"} style={{textDecoration:"none" , color:"inherit"  }}>
+                <RiFacebookLine />
+              </a>
+              <a href="https://www.instagram.com/accounts/login/?next=/bestbuycanada/" target={"_blank"} style={{textDecoration:"none" , color:"inherit"  }}>
+                <GrLinkedinOption />
+              </a>
+              <a href="https://www.linkedin.com/company/best-buy/" target={"_blank"} style={{textDecoration:"none" , color:"inherit"  }}>
+                <AiOutlineInstagram />
+              </a>
+              <a href="https://www.pinterest.com/bestbuycanada/" target={"_blank"} style={{textDecoration:"none" , color:"inherit"  }}>
+                <FaPinterestP />
+              </a>
+              <a href="https://twitter.com/bestbuycanada" target={"_blank"} style={{textDecoration:"none" , color:"inherit"  }}>
+                <FaTwitter />
+              </a>
+              <a href="https://www.youtube.com/user/CanadaBestBuy" target={"_blank"} style={{textDecoration:"none" , color:"inherit"  }}>
+                <AiFillYoutube />
+              </a>
+            </Box>
+          </Box>
+        </Box>
+        <Box
+          style={{
+            borderTop: "1px solid #e7ecf3",
+            marginTop: "30px",
+            textAlign: "left",
+            fontSize: "9px",
+            lineHeight: "14px",
+            marginLeft: "50px",
+          }}
+        >
+            <Box style={{marginTop:"10px"}}>
               {" "}
-              <div style={{display:"flex",gap:"20px" , color:"blue", marginBottom:"10px"}}>
+              <Box style={{display:"flex",gap:"20px" , color:"blue", marginBottom:"10px"}}>
                 <Link>Accessibility</Link>
                 <Link>Terms & Conditions</Link>
                 <Link>Privacy</Link>
@@ -214,13 +220,13 @@ function Footer() {
                 <Link>California Privacy Rights</Link>
                 <Link>Do Not Sell My Personal Information</Link>
                 <Link>California Supply Chain Transparency Act</Link>
-              </div>
-              <div>
+              </Box>
+              <Box>
               In-store pricing may vary. Prices and offers are subject to change. © 2022 Best Buy. All rights reserved. BEST BUY, the BEST BUY logo, the tag design, and MY BEST BUY are trademarks of Best Buy and its affiliated companies.
-              </div>
-            </div>
-          </div>
-        </div>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
       </>
     );
   }

@@ -3,11 +3,44 @@
     margin-bottom: 100px;
     color: blue;
 }
-@media (max-width: 500px) {
-    .navbar{
+.top-nav{
+    display: grid;
+    grid-template-columns: 68px 86px 10fr 7fr 75px;
+    grid-template-rows: 1fr;
+    column-gap: 48px;
+    font-size: larger;
+}
+.top-btn{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+@media (max-width: 1000px) {
+    .top-nav:nth-child(4){
+        display: none;
+    }
+    .top-nav{
         display: grid;
-        grid-template-columns: 68px 86px 10fr 0px 75px;
-        gap: "10px";
-        padding:"2rem 3rem"
+        grid-template-columns: 20px 40px 2fr 0fr 10px;
+        grid-template-rows: 1fr;
+        column-gap: 30px;
+        
     }
 }
+
+#box2{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #box1{
+        display: none;
+    }
+    #box2{
+        display: flex;
+        width: 100%;
+       
+    }
+}
+
+
