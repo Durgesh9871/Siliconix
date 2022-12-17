@@ -63,11 +63,4 @@ export const orderReducer = (state = initialState, action) => {
   }
 };
 
-console.log(initialState, "initstate state");
 
-// title: num.title,
-// description: num.desc,
-// brand: num.brand,
-// price: num.prize,
-// color: num.color,
-// discount: num.discount,

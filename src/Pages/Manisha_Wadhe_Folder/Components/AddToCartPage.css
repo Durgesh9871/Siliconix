@@ -3,10 +3,12 @@
     height: auto;
     /* border:1px solid red; */
     margin: auto;
+    overflow-x: hidden;
 }
 .cart{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,400px);
     gap:20px;
     margin: auto;
     border:1px green;

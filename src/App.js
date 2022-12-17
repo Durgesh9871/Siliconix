@@ -1,9 +1,11 @@
 import "./App.css";
-import AllRoutes from "./Routes/AllRoutes";
+import SearchBar from "./Pages/Manisha_Wadhe_Folder/SearchBar";
+// import AllRoutes from "./Routes/AllRoutes";
 function App() {
   return (
     <>
-      <AllRoutes />
+      {/* <AllRoutes /> */}
+      <SearchBar/>
     </>
   );
 }
