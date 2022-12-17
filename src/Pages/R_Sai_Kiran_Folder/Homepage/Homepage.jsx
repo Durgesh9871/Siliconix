@@ -1,4 +1,4 @@
-import { Box , Image ,Container, Link,Text, Button, Divider} from "@chakra-ui/react"
+import { Box , Image ,Container, Link,Text, Button, Divider, Heading} from "@chakra-ui/react"
 import "./Homepage.css"
 import { extendTheme } from '@chakra-ui/react'
 
@@ -112,6 +112,26 @@ const Newarrivals=[
     }
 ]
 
+const Ourfeaturedoffers=[
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-619648-pol-ase-112022-4ac773ac-3d86-4242-9b79-92e237ec8366.jpg;maxHeight=504;maxWidth=740",
+        title:"Apple Shopping Event.",
+        details:"Save up to $400 on select MacBook models, plus more great deals.",
+        discount:"MacBook minimum savings is $150."
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-621852_pol_COPE_DER-679e53d5-d140-4423-b2cd-695ba57d1093.jpg;maxHeight=504;maxWidth=740",
+        title:"Save up to $100 on select Fitbit wearable technology.",
+        details:"Choose smartwatches and fitness trackers to help monitor your daily activity.",
+        discount:"Minimum savings is $20."
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-604804-namebrandtv-pol_der-df0550ce-6248-40ed-a170-07adfed8ea92.jpg;maxHeight=504;maxWidth=740",
+        title:"Save up to $700 on select Samsung, LG and Sony TVs.",
+        details:"Enjoy stunning color and clarity with a feature-packed TV from these popular brands.",
+        discount:""
+    }
+]
 
 
 function Homepage(){
@@ -160,6 +180,33 @@ function Homepage(){
             </Box>
         </Box>    
     
+    </Box>
+
+
+    <Box marginTop={"20px"}>
+        <Image src="https://github.com/Durgesh9871/nappy-view-6299/blob/fp04_437_day5/src/Pages/R_Sai_Kiran_Folder/Images/Screenshot_20221217_112430.png?raw=true" width={"100%"}/>
+    </Box>
+
+
+    <Box display={"grid"} gridTemplateColumns="repeat(3, 1fr)" gap={"20px"}  marginLeft="10px" marginRight={"10px"} marginTop="40px">
+        <Box><Image height={"480px"} src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-606618-bf-mappls-cc48c3c0-5d58-4d66-87d6-7b21b6c77ca4.jpg;maxHeight=960;maxWidth=960"></Image></Box>
+        <Box><Image height={"480px"}  src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-76777-ghp-dotd-102422-1382f08e-adf4-4e20-9dd3-034ecd8b7066.jpg;maxHeight=960;maxWidth=960"></Image></Box>
+        <Box><Image height={"480px"}  src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/ghp-MMT-588432-outlet-ea2b69c3-e9a7-4eee-a507-04c149472ab8.png;maxHeight=960;maxWidth=960"></Image></Box>
+    </Box>
+
+
+    <Box>
+        
+    </Box>
+
+
+
+    <Box marginTop={"40px"} marginLeft="10px" marginRight={"10px"}>
+        <Heading width={"200px"}  as='h2' size='md'>Our featured offers</Heading>
+        <Divider  borderColor={"#A0AEC0"} marginTop={"5px"}/>
+        <Box display={"grid"} gridTemplateColumns="repeat(3, 1fr)" gap={"40px"} marginTop="15px">
+            {Ourfeaturedoffers.map((item)=>(<Box padding={"10px"} borderRight="1px solid #dbdee5"><Box paddingLeft={"40px"} paddingRight="40px" ><Image src={item.image}/></Box><Heading marginTop={"10px"}><Link color={"blue"}>{item.title}</Link></Heading><Text>{item.details}</Text></Box>))}
+        </Box>
     </Box>
 
 
