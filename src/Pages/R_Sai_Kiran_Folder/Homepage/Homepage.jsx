@@ -82,7 +82,7 @@ function Homepage(){
         <Box>
             <Image src="https://github.com/Durgesh9871/nappy-view-6299/blob/main/src/Pages/R_Sai_Kiran_Folder/Images/Screenshot_20221216_115849.png?raw=true"></Image>
         </Box>
-    <Box padding={"50px"}   background="linear-gradient(135deg, #00246d 27%, #0046be 40%, #0a6dfc 50%, #0046be 60%, #00246d 100%)">
+    <Box padding={"50px"}   background="linear-gradient(150deg, #00246d 5%, #0046be 20%, #0a6dfc 50%, #0046be 80%, #00246d 100%)">
             <Container maxW='70%'display={"grid"} gridTemplateColumns="repeat(6, 1fr)" gap={"20px"}  >
         {data.map((item)=>(<Box ><Link color={"#f9dc04"}><Box overflow='hidden' backgroundColor="white" borderRadius={"50%"} padding={"20px"}  border={"3px solid #4c7ee9"}><Image  src={item.image}/></Box><Text marginTop="10px" fontSize='sm'>{item.title}</Text></Link></Box>))}
     </Container></Box>
