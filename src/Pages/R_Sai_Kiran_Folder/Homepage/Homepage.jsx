@@ -294,6 +294,16 @@ function Homepage(){
         </Box>
     </Box>
 
+    <Box display={"grid"} gridTemplateColumns="repeat(3, 1fr)" gap={"20px"}  marginLeft="10px" marginRight={"10px"} marginTop="40px">
+        <Box><Image height={"480px"} src="https://github.com/Durgesh9871/nappy-view-6299/blob/fp04_437_day5/src/Pages/R_Sai_Kiran_Folder/Images/Screenshot_20221218_123513.png?raw=true"></Image></Box>
+        <Box><Image height={"480px"}  src="https://github.com/Durgesh9871/nappy-view-6299/blob/fp04_437_day5/src/Pages/R_Sai_Kiran_Folder/Images/Screenshot_20221218_123441.png?raw=true"></Image></Box>
+        <Box><Image height={"480px"}  src="https://github.com/Durgesh9871/nappy-view-6299/blob/fp04_437_day5/src/Pages/R_Sai_Kiran_Folder/Images/Screenshot_20221218_123537.png?raw=true"></Image></Box>
+    </Box>
+
+    <Box marginTop={"40px"}>
+        <Image src="https://github.com/Durgesh9871/nappy-view-6299/blob/fp04_437_day5/src/Pages/R_Sai_Kiran_Folder/Images/Screenshot_20221218_123618.png?raw=true" width={"100%"} />
+    </Box>
+
 
     </Box>)
 }
