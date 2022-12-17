@@ -134,6 +134,64 @@ const Ourfeaturedoffers=[
 ]
 
 
+const Holidaysolutions=[
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-78346-explore-top-tech-fb360ee0-4544-4e09-8910-b7346a598ca0.jpg;maxHeight=432;maxWidth=432",
+        title:"Top Tech gifts"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-78346-explore-unique-dfdf9a0b-6136-4502-ae6c-5f0e0f2719a2.jpg;maxHeight=432;maxWidth=432",
+        title:"Unique gifts"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-78346-explore-gifts-home-b891db5b-862c-4092-9de2-e261285126b9.jpg;maxHeight=432;maxWidth=432",
+        title:"Gifts for the home"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-78346-explore-foodies-39a2636c-44c7-4d75-9d1c-addcb64b0442.jpg;maxHeight=432;maxWidth=432",
+        title:"Gifts for foodies"
+    }
+]
+
+const GiftIdeas=[
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-77117-gift-u25-flex_der-e1d370fa-759b-40e7-ab0e-94aa953375b4.png;maxHeight=384;maxWidth=384",
+        title:"Gifts under $25"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-77117-gift-2550-flex_der-894d90f1-a1a9-4e60-a5d8-3cbcc93c1ea3.png;maxHeight=384;maxWidth=384",
+        title:"Gifts $25–$50"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-77117-gift-150-flex_der-77fe4ed4-e00c-4307-ad96-da4bb590332a.png;maxHeight=384;maxWidth=384",
+        title:"Gifts $50–$100"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-77117-gift-100-200-flex_der-5cb443c4-1d58-4a9e-9dfe-1ec2ee29c18e.png;maxHeight=384;maxWidth=384",
+        title:"Gifts $100–$200"
+    }
+]
+
+const Holidayhosting=[
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-79868-explore-lmg-ss-88174573-df36-46a7-945b-94ccaa12d465.jpg;maxHeight=432;maxWidth=432",
+        title:"Stocking stuffers"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-79868-explore-lmg-toys-2b324833-860e-4398-b42b-22159c7fc18b.jpg;maxHeight=432;maxWidth=432",
+        title:"Toys"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-79868-explore-lmg-vg-d5fb5f2f-6435-4faf-a7f4-622b0fd7527a.jpg;maxHeight=432;maxWidth=432",
+        title:"Gaming accessories"
+    },
+    {
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-79868-explore-lmg-gc-ea5dc1c3-fe9d-42c8-a503-b3c3bcd59071.jpg;maxHeight=432;maxWidth=432",
+        title:"Gift cards"
+    }
+]
+
+
 function Homepage(){
     return(<Box><Box backgroundColor={"#e0e6ef"}>
         
@@ -206,6 +264,33 @@ function Homepage(){
         <Divider  borderColor={"#A0AEC0"} marginTop={"5px"}/>
         <Box display={"grid"} gridTemplateColumns="repeat(3, 1fr)" gap={"40px"} marginTop="15px">
             {Ourfeaturedoffers.map((item)=>(<Box padding={"10px"} borderRight="1px solid #dbdee5"><Box paddingLeft={"40px"} paddingRight="40px" ><Image src={item.image}/></Box><Heading marginTop={"10px"}><Link color={"blue"}>{item.title}</Link></Heading><Text>{item.details}</Text></Box>))}
+        </Box>
+    </Box>
+
+
+    <Box marginTop={"40px"}>
+        <Image src="https://github.com/Durgesh9871/nappy-view-6299/blob/fp04_437_day5/src/Pages/R_Sai_Kiran_Folder/Images/Screenshot_20221218_121204.png?raw=true" width={"100%"}/>
+    </Box>
+
+
+    <Box display={"grid"} gridTemplateColumns="repeat(3, 1fr)" gap={"20px"} marginTop={"40px"} marginLeft="10px" marginRight={"10px"}>
+        <Box  backgroundColor="#f0f2f4">
+            <Box  width="180px" marginTop={"20px"}><b>Gift Ideas for everyone</b></Box>
+            <Box display={"grid"} gridTemplateColumns="repeat(2, 1fr)" gap={"20px"}  padding={"20px"}>
+                {Holidaysolutions.map((item)=>(<Link color={"blue"}><Image borderRadius={"5px"} src={item.image}/><Text>{item.title}</Text></Link>))}
+            </Box>
+        </Box>
+        <Box backgroundColor="#f0f2f4">
+            <Box width="130px" marginTop={"20px"}><b>Gift Ideas by price</b></Box>
+            <Box display={"grid"} gridTemplateColumns="repeat(2, 1fr)" gap={"20px"}  padding={"20px"}>
+                {GiftIdeas.map((item)=>(<Link color={"blue"}><Image borderRadius={"5px"} src={item.image}/><Text>{item.title}</Text></Link>))}
+            </Box>
+        </Box>
+        <Box backgroundColor="#f0f2f4">
+            <Box width="200px" marginTop={"20px"}><b>Last-minute gifts</b></Box>
+            <Box display={"grid"} gridTemplateColumns="repeat(2, 1fr)" gap={"20px"}  padding={"20px"}>
+                {Holidayhosting.map((item)=>(<Link color={"blue"}><Image borderRadius={"5px"} src={item.image}/><Text>{item.title}</Text></Link>))}
+            </Box>
         </Box>
     </Box>
 
