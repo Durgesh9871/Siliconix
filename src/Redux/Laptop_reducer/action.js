@@ -1,6 +1,6 @@
 
 import {GETPRODUCTLAPTOPDATA_REQUEST ,GETPRODUCTLAPTOPDATA_SUCCESS,GETPRODUCTLAPTOPDATA_FAILURE} from "./actionType"  ; 
-import axios from "axios"
+import axios from "axios" ; 
 
 
 const getDataProduct =(params,page)=>(dispatch)=>{
