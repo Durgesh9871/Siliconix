@@ -8,11 +8,17 @@ import Homepage from './Pages/R_Sai_Kiran_Folder/Homepage/Homepage';
 import "./Pages/R_Sai_Kiran_Folder/Navber/Navbar1.css"
 // import Navbar2 from './Pages/R_Sai_Kiran_Folder/Navber/Navbar2';
 
+
 function App() {
   return(<>
 
   <Homepage/>
+  {/* <ProductPage /> */}
+  {/* <SinglePageProduct /> */}
+  {/* <AllRoutes /> */}
+
   </>)
+
 
   }
 export default App;
