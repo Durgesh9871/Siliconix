@@ -1,8 +1,10 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import "./SearchBar.css";
-import { Box, SimpleGrid } from '@chakra-ui/react';
+import { Box, Input, SimpleGrid, Spinner } from '@chakra-ui/react';
 import { DisplayProductMainData } from '../Durgesh_Folder/Components/DisplayProductMainData';
+import { CloseIcon } from '@chakra-ui/icons';
+import { LoadingIndicator } from './LoadingIndicator';
 
 const SearchBar = () => {
     const [loading, setLoading] = useState(false);
@@ -20,22 +22,25 @@ const SearchBar = () => {
         }
         loadPosts();
     },[]);
+
   
 
   return (
     <Box className='container'>
-        <h1>SearchBar</h1>
-        <Box className='input'>
-            <input type="text" placeholder='Search Products' onChange={(e)=> 
-                 setSearchTitle(e.target.value)} />
-       </Box>
+        <Box className='input' >
+            <Input shadow="base" fontSize="20px" type="search" width={{base:"80%", sm: "60%", md: "64%", lg: "50%",xl: "50%",'2xl': "50%"}} placeholder='Search the Products' onChange={(e)=>  setSearchTitle(e.target.value)}  height="50px" border="2px solid blue" /> 
+            
+       </Box>  
+
+      {loading && <LoadingIndicator />}
       
        <Box id='DisplayDataBox'  style={{border:"1px  green" , height:"auto" , width:"100%"}} >
           <SimpleGrid columns={{base:1, sm: 1, md: 2, lg: 3,xl: 4,'2xl': 4,}} spacingY={10}   >
-           
-        
+            
+         
+         
 
-{loading? (<div className='img'><img src='https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif'/></div>) : (
+{!loading  &&   (
             
             post.filter((value)=>{
                 if(searchTitle === ""){
@@ -46,21 +51,14 @@ const SearchBar = () => {
             })
             .map((item)=>{
                 return (
-         <DisplayProductMainData key= {item.id} id={item.id} src={item.Images} name={item.title} model={item.brand}    price={item.price}    review={item.rating}  realPrice={item.realPrice} isLaptopLoading={true} allData ={item}/>
+         <DisplayProductMainData key= {item.id} id={item.id} src={item.Images} name={item.title} model={item.brand}    price={item.price}  review={item.rating}  realPrice={item.realPrice} isLaptopLoading={true} allData ={item}/>
 
                 )
             })
             
         )}
 
- {/* <div key={item.id}>
-            //     <img src={item.Images[0].imageFront}/>
-            //     <h5 >Name:{item.title}</h5>
-            //      <h5>Discount:{item.discount}</h5>
-            //      <h5>Price:{item.realPrice}</h5>
-            //      <hr></hr>
-
-            // </div> */}
+ 
        
        
 
