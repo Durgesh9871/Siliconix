@@ -9,6 +9,8 @@ const SearchBar = () => {
     const [post, setPost] = useState([]);
     const [searchTitle, setSearchTitle] = useState("");
 
+
+   
     useEffect(()=>{
         const loadPosts = async ()=>{
             setLoading(true);
@@ -21,24 +23,20 @@ const SearchBar = () => {
   
 
   return (
-    <div className='container'>
+    <Box className='container'>
         <h1>SearchBar</h1>
-        <div className='input'>
-            <input type="text" placeholder='Search Products' onChange={(e)=> setSearchTitle(e.target.value)} />
-       </div>
-       <Box border="2px solid red">
+        <Box className='input'>
+            <input type="text" placeholder='Search Products' onChange={(e)=> 
+                 setSearchTitle(e.target.value)} />
+       </Box>
       
-          <SimpleGrid columns={{base:1, sm: 1, md: 2, lg: 3,xl: 3,'2xl': 3,}} spacingY={10}  >
+       <Box id='DisplayDataBox'  style={{border:"1px  green" , height:"auto" , width:"100%"}} >
+          <SimpleGrid columns={{base:1, sm: 1, md: 2, lg: 3,xl: 4,'2xl': 4,}} spacingY={10}   >
            
-           {/* {productArrayLaptop.length > 0 && productArrayLaptop.map((item)=>{
-             return (
-           <DisplayProductMainData key= {item.id} id={item.id} src={item.Images} name={item.title} model={item.brand}    price={item.price}    review={item.rating}  realPrice={item.realPrice} isLaptopLoading={isLaptopLoading} allData ={item}/>
-           
-             )
-           })} */}
+        
 
 {loading? (<div className='img'><img src='https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif'/></div>) : (
-            // post.map((item)=><h5 key={item.id}>{item.title}</h5>)
+            
             post.filter((value)=>{
                 if(searchTitle === ""){
                     return value;
@@ -69,7 +67,7 @@ const SearchBar = () => {
 
          </SimpleGrid>
         </Box>
-    </div>
+    </Box>
   )
 }
 
