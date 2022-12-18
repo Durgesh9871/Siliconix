@@ -3,7 +3,7 @@ import axios from 'axios';
 import "./SearchBar.css";
 import { Box, Input, SimpleGrid, Spinner } from '@chakra-ui/react';
 import { DisplayProductMainData } from '../Durgesh_Folder/Components/DisplayProductMainData';
-import { CloseIcon } from '@chakra-ui/icons';
+import { CloseIcon, SearchIcon } from '@chakra-ui/icons';
 import { LoadingIndicator } from './LoadingIndicator';
 
 const SearchBar = () => {
@@ -28,7 +28,8 @@ const SearchBar = () => {
   return (
     <Box className='container'>
         <Box className='input' >
-            <Input shadow="base" fontSize="20px" type="search" width={{base:"80%", sm: "60%", md: "64%", lg: "50%",xl: "50%",'2xl': "50%"}} placeholder='Search the Products' onChange={(e)=>  setSearchTitle(e.target.value)}  height="50px" border="2px solid blue" /> 
+            <SearchIcon fontSize="20px" position="relative" left="30px" />
+            <Input shadow="base" pl={9} fontSize="20px" type="search" width={{base:"80%", sm: "60%", md: "64%", lg: "50%",xl: "50%",'2xl': "50%"}} placeholder='Search the Products' onChange={(e)=>  setSearchTitle(e.target.value)}  height="50px" border="2px solid blue" /> 
             
        </Box>  
 
