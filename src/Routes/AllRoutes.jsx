@@ -15,8 +15,8 @@ import Cart from "../Pages/Manisha_Wadhe_Folder/Components/Cart";
 // import CartPage from "./Pages/Danish_Pinjari_Folder/WishList";
 
 // Dugesh page import ------- upper code commented because of conflict--------------------------------------------------> 
-// import {ProductPage} from "../Pages/Durgesh_Folder/Pages/ProductPage"
-// import {SinglePageProduct} from "../Pages/Durgesh_Folder/Pages/SinglePageProduct"
+import {ProductPage} from "../Pages/Durgesh_Folder/Pages/ProductPage"
+import {SinglePageProduct} from "../Pages/Durgesh_Folder/Pages/SinglePageProduct"
 
 const AllRoutes = () => {
   return (
@@ -30,8 +30,8 @@ const AllRoutes = () => {
         <Route path={"/"} element={<AddToCartPage />} />
         <Route path={"/cart"} element={<Cart/>} />
         
-        {/* <Route path="/productLaptop" element={<ProductPage />}></Route>
-        <Route path="/productLaptop/:id" element={<SinglePageProduct />}></Route> */}
+        <Route path="/productLaptop" element={<ProductPage />}></Route>
+        <Route path="/productLaptop/:id" element={<SinglePageProduct />}></Route>
        
         
       </Routes>
