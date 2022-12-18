@@ -21,7 +21,7 @@ const SearchBar = () => {
             setLoading(false)
         }
         loadPosts();
-    },[]);
+    },[])
 
   
 
