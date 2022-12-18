@@ -36,6 +36,21 @@
     }
  }
 
+ /*  For removing filter media in small screen -------------------------------------- */
+ @media  (min-width: 300px) and (max-width: 500px)  {
+    #ResponsiveAllProductPages{
+        display: none;
+    }
+    .horizatalRule1{
+        display: none;
+    }
+    #filterMainBoxDisplayData{
+       padding-left: 65px;
+    }
+ }
+
+ 
+ 
 
  /*  For clearing filter------------- */
 

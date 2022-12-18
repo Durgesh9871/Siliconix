@@ -368,7 +368,13 @@ const clearAllFilterItem = ()=>{
               );
             })}
         </Box>
-      </Box>
+      </Box> 
+
+      {/*   Responsive code of sorting and filtering -------------------------------- */} 
+
+
+      <Box className="ResponsiveCodeFilter"></Box>
+      hello 
     </Box>
   );
 };

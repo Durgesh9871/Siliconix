@@ -54,6 +54,11 @@
 .hoverProductDiv{
     margin: auto;
 }
+
+.ResponsiveCodeFilter{
+    display: none;
+}
+
 @media  (min-width: 300px) and (max-width: 480px)  {
         .hoverFilterMainBox{
             display: none;
@@ -62,6 +67,12 @@
         .hoverProductDiv{
             margin-left: -45px;
         }
+        .ResponsiveCodeFilter{
+            display: flex;
+        }
 }
+
+ 
+
 /*  hiding filter div --------------------------------------------------- */
 
