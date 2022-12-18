@@ -1,18 +1,18 @@
 import { ChevronDownIcon } from '@chakra-ui/icons'
-import { Box , Link ,PopoverTrigger,PopoverContent,PopoverArrow,PopoverBody,PopoverCloseButton,Button,Popover, Menu, MenuButton, MenuList, MenuItem} from '@chakra-ui/react'
+import { Box , Link ,PopoverTrigger,PopoverContent,PopoverArrow,PopoverBody,PopoverCloseButton,Button,Popover} from '@chakra-ui/react'
 import "./Navbar1.css"
 
 
 function Navbar2(){
     return (
-    <Box bg='#0046be' w='100%' p={4} color='white' display={"flex"} justifyContent="space-between" paddingRight={"30px"} paddingLeft="30px">
-    <Box id="box1" display={"flex"} gap="15px" >
+    <Box bg='#0046be' id="box1"  p={4} color='white' display={"flex"} justifyContent="space-between" marginTop={"4rem"} paddingRight={"30px"} paddingLeft="30px" >
+    <Box  display={"flex"} gap="15px" >
     <Link>
         <Popover colorScheme="red">
                   <PopoverTrigger>
                     <Button color="white" bg="#0046bf" colorScheme='white' variant='link' >Holiday Deals</Button>
                   </PopoverTrigger>
-                  <PopoverContent bg="blue" color='white'>
+                  <PopoverContent  color='white'>
                     <PopoverArrow />
                     <PopoverBody color="blue">Back Friday Deals Right Now</PopoverBody>
                     <PopoverBody color="blue">Gift Ideas</PopoverBody>
@@ -45,43 +45,7 @@ function Navbar2(){
                 </Popover>
         </Link>
     </Box>
-    <Box id="box2"  gap="15px">
-    <Box><Link>
-        <Popover >
-                  <PopoverTrigger>
-                    <Button color="white" bg="#0046bf" colorScheme='white' variant='link' >Holiday Deals<ChevronDownIcon marginTop={"5px"}/></Button>
-                  </PopoverTrigger>
-                  <PopoverContent color='blue' textAlign={'center'}>
-                    <PopoverArrow />
-                    <PopoverBody >Back Friday Deals Right Now</PopoverBody>
-                    <PopoverBody >Gift Ideas</PopoverBody>
-                    <PopoverBody >Gift Carts</PopoverBody>
-                    <PopoverBody >Explore Holiday Inspirations</PopoverBody>
-                    <PopoverBody >Close<PopoverCloseButton /></PopoverBody>
-                  </PopoverContent>
-                  
-                </Popover>
-        </Link></Box>
-       
-        <Link>
-        <Popover >
-                  <PopoverTrigger>
-                    <Button color="white" bg="#0046bf" colorScheme='white' variant='link' >More<ChevronDownIcon marginTop={"5px"}/> </Button>
-                  </PopoverTrigger>
-                  <PopoverContent textAlign={'center'}>
-                    <PopoverArrow />
-                    <PopoverBody color="blue">Totaltech Membership</PopoverBody>
-                    <PopoverBody color="blue">Credit Cards</PopoverBody>
-                    <PopoverBody color="blue">Gift Cards</PopoverBody>
-                    <PopoverBody color="blue">Health & Wellness</PopoverBody>
-                    <PopoverBody color="blue">Best Buy Outlet</PopoverBody>
-                    <PopoverBody color="blue">Best Buy Business</PopoverBody>
-                    <PopoverBody color="blue">Close<PopoverCloseButton value="bottom-start" /></PopoverBody>
-                  </PopoverContent>
-                  
-                </Popover>
-        </Link>
-    </Box>
+    
     <Box  display={"flex"} gap="15px">
         <Link>
         <Popover >
@@ -107,7 +71,8 @@ function Navbar2(){
         <Link>Order Status</Link>
         <Link>Saved Items</Link>
     </Box>
-  </Box>)
+  </Box>
+  )
 }
 
 export default Navbar2

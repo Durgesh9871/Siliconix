@@ -1,0 +1,17 @@
+.Hidefooter2{
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+    .Hidefooter{
+        display: none;
+    }
+    .Hidefooter2{
+        display: block;
+        
+    }
+    .stylefooter{
+        width: "400px";
+        
+    }
+}
