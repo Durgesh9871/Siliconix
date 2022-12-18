@@ -284,12 +284,12 @@ const clearAllFilterItem = ()=>{
         <Box>
        
         <input type="radio" value="asc"  name="sortBy" checked={sort === 'asc'}    onChange= 
-           {handleSort}  style={{ height:"11px" , width:"11px"}} />
+           {handleSort}   />
         <label> <Text display="inline-block">Low to High</Text> </label>
           
           <br />
         <input type="radio" value="desc"  name="sortBy" checked={sort === 'desc'}   onChange= 
-          {handleSort} style={{ height:"11px" , width:"11px"}}  />
+          {handleSort}  />
           <label> <Text display="inline-block">High to low</Text> </label>
         </Box>
 
