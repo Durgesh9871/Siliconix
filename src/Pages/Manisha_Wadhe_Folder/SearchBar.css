@@ -1,28 +1,25 @@
-/* .container{
-    display: flex;
-    margin: auto;
-    border: 1px solid red
-} */
-input{
-    border:1px solid black;
-    align-items: center;
-    width: 500px;
-    height: 40px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-    
-} 
+
+/*  Dont change the css ------------------Durgesh singh  */
+
 .input{
     display: flex;
-    margin: auto;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 60px;
 }
-.img{
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+
+ 
+/*  Code for responsiveness --------------------------------------------------------- */
+
+
+@media  (min-width: 300px) and (max-width: 480px)  {
+      
+    #DisplayDataBox{
+        display: flex;
+        justify-content: right; 
+        padding-right: 30px;
+    }
+
+
 }

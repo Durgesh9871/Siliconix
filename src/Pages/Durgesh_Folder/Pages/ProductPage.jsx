@@ -164,7 +164,7 @@ const PaginationFunction = (queryParams)=>{
     
     {/*  Filtering and display data starts here ----------------------------------------------- */}
     
-     <Box id='filterMainBox_&_DisplayData' style={{border:"1px  red" ,width:"92%" , margin:"auto" , height:"auto" , display:"flex" , justifyContent:"space-between" }}>
+     <Box id='filterMainBoxDisplayData' style={{border:"1px  red" ,width:"92%" , margin:"auto" , height:"auto" , display:"flex"  }} justifyContent={{base:"right", sm: "space-between", md: "space-between", lg: "space-between",xl: "space-between",'2xl': "space-between"}}   flexDirection={{base:"column", sm: "row", md: "row", lg: "row",xl: "row",'2xl': "row"}} >
        
       
        <Box id='FilterMainBox' height="auto" width={{base:"none", sm: "43%", md: "24%", lg: "17%",xl: "17%",'2xl': "17%"}} shadow="md" style={{border:"0.1px solid #e7e9ee"}}>
