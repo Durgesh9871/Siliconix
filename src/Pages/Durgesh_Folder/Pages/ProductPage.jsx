@@ -130,7 +130,7 @@ const PaginationFunction = (queryParams)=>{
 
   //  pagination logic ends --------------------------------------------------> 
   return (
-    <Box>
+    <Box mt={12}>
    <hr className='horizatalRule'/> 
    
    <Box style={{width:"92%" , border:"2px  red" , margin:"auto"}}>

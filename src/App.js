@@ -4,7 +4,7 @@
 
 import Footer from './Pages/R_Sai_Kiran_Folder/Footer/Footer';
 import Homepage from './Pages/R_Sai_Kiran_Folder/Homepage/Homepage';
-// import Navbar1 from './Pages/R_Sai_Kiran_Folder/Navber/Navbar1';
+import Navbar1 from './Pages/R_Sai_Kiran_Folder/Navber/Navbar1';
 import "./Pages/R_Sai_Kiran_Folder/Navber/Navbar1.css"
 import AllRoutes from './Routes/AllRoutes';
 // import Navbar2 from './Pages/R_Sai_Kiran_Folder/Navber/Navbar2';
@@ -12,8 +12,9 @@ import AllRoutes from './Routes/AllRoutes';
 
 function App() {
   return(<>
-
-  <Homepage/> 
+ 
+  <Navbar1 />
+  {/* <Homepage/>  */}
   {/* <ProductPage /> */}
   {/* <SinglePageProduct /> */}
   <AllRoutes />

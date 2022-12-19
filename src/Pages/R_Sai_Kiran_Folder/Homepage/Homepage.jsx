@@ -2,7 +2,7 @@ import { Box , Image ,Container, Link,Text, Button, Divider, Heading} from "@cha
 import "./Homepage.css"
 import { extendTheme } from '@chakra-ui/react'
 //import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+// import 'react-multi-carousel/lib/styles.css';
 import { productData,productData2, responsive } from "./Data";
 
 export const theme = extendTheme({

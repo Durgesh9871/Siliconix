@@ -18,6 +18,7 @@ import Cart from "../Pages/Manisha_Wadhe_Folder/Components/Cart";
 import {ProductPage} from "../Pages/Durgesh_Folder/Pages/ProductPage"
 import {SinglePageProduct} from "../Pages/Durgesh_Folder/Pages/SinglePageProduct"
 import { SearchBar } from "../Pages/Manisha_Wadhe_Folder/SearchBar";
+import Homepage from "../Pages/R_Sai_Kiran_Folder/Homepage/Homepage";
 
 const AllRoutes = () => {
   return (
@@ -28,8 +29,8 @@ const AllRoutes = () => {
         <Route path="/buyer_signup" element={<Buyer_Signup />} />
         <Route path="/admin" element={<AdminPage />} /> */}
 
-        <Route path={"/"} element={<AddToCartPage />} />
-        <Route path={"/cart"} element={<Cart/>} />
+        <Route path={"/"} element={<Homepage />} />
+        {/* <Route path={"/cart"} element={<Cart/>} /> */}
         
         {/*  Product Pages ---------------------------- */}
         <Route path="/productLaptop" element={<ProductPage />}></Route>

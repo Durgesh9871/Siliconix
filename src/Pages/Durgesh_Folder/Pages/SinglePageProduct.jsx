@@ -48,7 +48,7 @@ GetSinglePageData(num)
      
 
   return (
-    <Box className="SingleProductMainDiv" background="#f1f3f6"  style={{border:"1px   green" , height:"auto" , }}>
+    <Box className="SingleProductMainDiv" background="#f1f3f6"  style={{border:"1px   green" , height:"auto" , }} mt={20}>
       {/* Button -----left----------------------- */}
         <ChevronLeftIcon onClick={handleChangeRemove} position="absolute" left="-4px" cursor="pointer" top="250px" w={{base:'32px',sm: "45px", md: "50px", lg: "50px" ,xl: "66px",'2xl': "66px",}} h={{base:'32px',sm: "45px", md: "50px", lg: "50px" ,xl: "66px",'2xl': "66px",}}/> 
 
