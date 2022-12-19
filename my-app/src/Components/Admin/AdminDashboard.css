@@ -1,0 +1,138 @@
+.AdminDashboard {
+  margin-top: 6rem;
+}
+
+.AddProduct {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem;
+}
+
+.AdminDashboard h1 {
+  text-align: center;
+}
+
+.SingleProduct {
+  height: fit-content;
+  transition: 0.4s all ease-in-out;
+  border: 1px solid #e0e0e0;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.SingleProduct:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 12px -5px black;
+  z-index: 10;
+}
+
+.SingleProduct img {
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  height: 10rem;
+}
+
+.AllProduct {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 90%;
+  margin: auto;
+}
+
+.AfterImgBox {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MainPartOfEdit {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+.EditIcon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* SEARCH BAR FUNCTIONANITY CSS */
+
+#searchBar {
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 5px;
+}
+
+.SearchButton {
+  width: 10rem;
+  border-radius: 5px;
+  background-color: rgb(66, 103, 171);
+  color: white;
+  box-shadow: 0px 0px 9px -3px #545454;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .AllProduct {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #searchBar {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .AllProduct {
+    grid-template-columns: repeat(1, 1fr);
+    width: 75%;
+  }
+  #searchBar {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .AllProduct {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    gap: 0px;
+  }
+  #searchBar {
+    width: 90%;
+  }
+  .PaginationPart {
+    width: 90%;
+  }
+  .SingleProduct {
+    flex-direction: column;
+  }
+}
+
+.ChangeInputbox {
+  margin-bottom: 1rem;
+}
+
+.PaginationPart {
+  width: 100%;
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.PaginationPart button {
+  width: 4rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  border-radius: 0px;
+}

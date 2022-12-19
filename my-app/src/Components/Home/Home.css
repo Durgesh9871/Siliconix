@@ -1,0 +1,84 @@
+.Home {
+  margin-top: 8rem;
+}
+
+.CateHome {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+h1 span {
+  color: red;
+  font-size: 2.6rem;
+  font-weight: bolder;
+}
+.CateHome h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.CateHome h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.AllProductCategories {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.Imgclass img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 8px -5px black;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+  z-index: -100;
+}
+
+.Imgclass img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 12px -5px black;
+}
+
+.MainCarousel {
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+/* Media Queries start from here */
+
+@media only screen and (max-width: 800px) {
+  .AllProductCategories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .AllProductCategories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .CateHome h1 {
+    font-size: 1.6rem;
+  }
+  .CateHome h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .AllProductCategories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .CateHome h1 {
+    font-size: 1.2rem;
+  }
+  .CateHome h3 {
+    font-size: 1rem;
+  }
+}

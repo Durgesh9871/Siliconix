@@ -1,0 +1,33 @@
+.Login {
+  margin: auto;
+  margin-top: 6rem;
+  border: 1px solid rgb(0, 0, 0);
+  width: 30%;
+  padding: 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 8px;
+}
+
+.Login h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.FormInput {
+  border: 2px solid rebeccapurple;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+form button {
+  width: 8rem;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px -5px black;
+  border: none;
+  background-color: #86e886;
+}

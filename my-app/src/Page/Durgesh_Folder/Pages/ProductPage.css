@@ -1,45 +1,38 @@
-
-
-.horizatalRule{
-    /* background-color: #e7e9ee ; */
-    border: 0.1px solid #e7e9ee ;
-    margin-top: 4vh;
- 
+.horizatalRule {
+  /* background-color: #e7e9ee ; */
+  border: 0.1px solid #e7e9ee;
+  margin-top: 15vh;
 }
-.horizatalRule1{
-    border: 0.1px solid #e7e9ee ;
-    margin-top: 12px ;
-    margin-bottom: 12px ;
- 
+.horizatalRule1 {
+  border: 0.1px solid #e7e9ee;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
-
 
 /*  For responsiveness code----------------------- */
-#allPagesLink{
-    display: flex;
-    /* border: 2px solid red; */
+#allPagesLink {
+  display: flex;
+  /* border: 2px solid red; */
 }
-#ResponsiveAllProductPages{
-    display: none;
+#ResponsiveAllProductPages {
+  display: none;
 }
 
 /*  Media Queries----------------------------------------------------- */
 
+@media (min-width: 300px) and (max-width: 800px) {
+  #allPagesLink {
+    display: none;
+    /* border: 2px solid red; */
+  }
+  #ResponsiveAllProductPages {
+    display: flex;
+  }
+}
 
-@media  (min-width: 300px) and (max-width: 800px)  {
-    #allPagesLink{
-     display: none;
-     /* border: 2px solid red; */
-    }
-    #ResponsiveAllProductPages{
-        display: flex;
-    }
- }
+/*  For clearing filter------------- */
 
-
- /*  For clearing filter------------- */
-
- .clearAllFilter:hover{
-   text-decoration: underline;
-   color : #e11d41
- }
+.clearAllFilter:hover {
+  text-decoration: underline;
+  color: #e11d41;
+}

@@ -1,0 +1,24 @@
+.UserSignup {
+  margin: auto;
+  margin-top: 6rem;
+  border: 1px solid rgb(0, 0, 0);
+  width: 30%;
+  padding: 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 8px;
+}
+
+.UserSignup h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.UserFormInput {
+  margin: 10px;
+}
+
+.UserSignup button {
+  width: 100%;
+}

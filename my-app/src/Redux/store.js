@@ -1,9 +1,21 @@
+import {
+  legacy_createStore,
+  applyMiddleware,
+  compose,
+  combineReducers,
+} from "redux";
+import thunk from "redux-thunk";
+import { LaptopReducer } from "./Laptop_reducer/reducer";
+import { orderReducer } from "../Redux/Redux/reducer";
 
-import {applyMiddleware, legacy_createStore} from "redux" 
-import { LaptopReducer } from "./Laptop_reducer/reducer"
-import thunk from "redux-thunk"
- 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = legacy_createStore(LaptopReducer ,applyMiddleware(thunk))
+const rootReducer = combineReducers({
+  order: orderReducer,
+  Laptop: LaptopReducer,
+});
 
-export {store}
+export const store = legacy_createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(thunk))
+);

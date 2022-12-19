@@ -1,0 +1,47 @@
+#MainProductPage {
+  margin-top: 6rem;
+}
+
+.GeneralButton {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.GeneralButton p {
+  font-size: 1.7rem;
+}
+
+.FilterandProduct {
+  display: flex;
+}
+
+.FilterSection {
+  min-height: 500px;
+  max-height: 500px;
+  position: sticky;
+  overflow-y: scroll;
+  z-index: 0;
+}
+.FilterSection::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.FilterSection::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(45, 45, 45);
+  border-radius: 10px;
+}
+
+/* Handle */
+.FilterSection::-webkit-scrollbar-thumb {
+  background: rgb(94, 92, 92);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.FilterSection::-webkit-scrollbar-thumb:hover {
+  background: #7181ea;
+}
+
+/* RIGHT SIDE PART OF THE WEBSITE  */
