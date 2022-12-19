@@ -9,6 +9,8 @@ import "./App.css"
 
 function App() {
   return(<>
+  <Navbar1/>
+  <Homepage/>
   
   </>)
 }
