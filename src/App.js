@@ -13,7 +13,7 @@ import AllRoutes from './Routes/AllRoutes';
 function App() {
   return(<>
 
-  {/* <Homepage/> */}
+  <Homepage/> 
   {/* <ProductPage /> */}
   {/* <SinglePageProduct /> */}
   <AllRoutes />

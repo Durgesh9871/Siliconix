@@ -1,7 +1,7 @@
 import { Box , Image ,Container, Link,Text, Button, Divider, Heading} from "@chakra-ui/react"
 import "./Homepage.css"
 import { extendTheme } from '@chakra-ui/react'
-import Carousel from 'react-multi-carousel';
+//import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { productData,productData2, responsive } from "./Data";
 
@@ -294,7 +294,7 @@ function Homepage(){
     </Box>
 
 
-    <Box  marginTop="40px"    zIndex="-10"  w={{base:"600px",sm:"700px",md:"1000px",lg:"100%",xl:"100%","2xl":"100%"}} >
+    {/*<Box  marginTop="40px"    zIndex="-10"  w={{base:"600px",sm:"700px",md:"1000px",lg:"100%",xl:"100%","2xl":"100%"}} >
         <Box fontSize={"20px"}><b>Deals inspired by your shopping</b></Box>
         <Divider marginTop="10px" marginBottom={"20px"}/>
     <Carousel id="Box2"  responsive={responsive} >
@@ -308,7 +308,7 @@ function Homepage(){
             </div>
           </Link>)
         })}</Carousel>
-    </Box>
+    </Box>*/}
 
 
 
@@ -326,7 +326,7 @@ function Homepage(){
     </Box>
 
 
-    <Box  marginTop="40px"  w={{base:"600px",sm:"700px",md:"1000px",lg:"100%",xl:"100%","2xl":"100%"}}>
+    {/*<Box  marginTop="40px"  w={{base:"600px",sm:"700px",md:"1000px",lg:"100%",xl:"100%","2xl":"100%"}}>
         <Box fontSize={"20px"}><b>Deals inspired by your shopping</b></Box>
         <Divider marginTop="10px" marginBottom={"20px"}/>
     <Carousel id="Box2"  responsive={responsive} >
@@ -340,7 +340,7 @@ function Homepage(){
             </div>
           </Link>)
         })}</Carousel>
-    </Box>
+    </Box>*/}
 
 
     <Box display={"grid"} gridTemplateColumns="repeat(3, 1fr)" gap={"20px"} marginTop={"40px"} marginLeft="10px" marginRight={"10px"} w={{base:"600px",sm:"700px",md:"1000px",lg:"100%",xl:"100%","2xl":"100%"}}>
