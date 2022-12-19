@@ -1,5 +1,5 @@
-import { Flex, Spacer, Input , Box, Heading, useDisclosure, Button, Center, Switch, useColorMode,Link,AccordionButton,AccordionItem, Accordion,AccordionPanel,InputGroup, InputRightElement, ButtonGroup, Grid, GridItem,Image, Divider, AccordionIcon} from '@chakra-ui/react'
-import { AiOutlineAppstore, AiOutlineMenu , AiOutlineShoppingCart} from "react-icons/ai";
+import {  Input , Box, Heading, useDisclosure, Button,Link,AccordionButton,AccordionItem, Accordion,AccordionPanel,InputGroup, InputRightElement,  Grid,Image, Divider, AccordionIcon} from '@chakra-ui/react'
+import { AiOutlineMenu , AiOutlineShoppingCart} from "react-icons/ai";
 import {BsSearch} from "react-icons/bs"
 import {StarIcon} from "@chakra-ui/icons"
 import {
@@ -20,10 +20,10 @@ function Navbar1(){
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
     return(
-      <Box  bg="#0046be" >
-        <Grid className='top-nav' alignItems={'center'} padding="1rem 3rem"> 
-          <Image src="https://files.slack.com/files-pri/T049YSPNG02-F04F4HE4LHH/profilepicturemaker_1_.png"   />
-          <Button className='top-btn' ref={btnRef} leftIcon={<AiOutlineMenu size={"25px"}/>}   colorScheme='#0046be' style={{fontSize:"20px"}}  onClick={onOpen}><b>Menu</b>
+      <Box  bg="#0046be" position={"fixed"} width="100%" top={"0"} right="0" zIndex={"1000"}>
+        <Box className='top-nav' alignItems={'center'} padding="1rem 1rem"> 
+          {/* <Image src="https://files.slack.com/files-pri/T049YSPNG02-F04F4HE4LHH/profilepicturemaker_1_.png"   /> */}
+          <Button className='top-btn' ref={btnRef} leftIcon={<AiOutlineMenu size={"25px"}/>}   colorScheme='#0046be' style={{fontSize:"20px"}}  onClick={onOpen}>
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -384,15 +384,15 @@ function Navbar1(){
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
-      <InputGroup  width={"100%"} >
-    <Input bg={"white"} placeholder="Search" />
+      <InputGroup  width={"100%"} className="NavbarSearch" >
+    <Input bg={"white"} width="100%" placeholder="Search" />
     <InputRightElement children={<BsSearch color='green.500' /> }  />
   </InputGroup>
-          <Box textAlign={"right"}>
-            <Button className='top-btn' leftIcon={<StarIcon size={"25px"} />} colorScheme='#0046be'  style={{fontSize:"20px"}}><b>Aiea</b></Button>
+          <Box textAlign={"right"} className="AlexHidden">
+            <Button className='top-btn'  colorScheme='#0046be'  style={{fontSize:"20px"}}><b>Login/Signup</b></Button>
           </Box>
           <Button className='top-btn' leftIcon={<AiOutlineShoppingCart size={"25px"} />} colorScheme='#0046be'  style={{fontSize:"20px"}}><b>Cart</b></Button>
-        </Grid>
+        </Box>
       </Box>
     )
 }
