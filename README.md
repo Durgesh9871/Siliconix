@@ -29,3 +29,27 @@
 
 
 <h3 align="center"><a href="https://my-app-durgesh9871.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
+
+
+
+## Screens ( All screens are responsive along with Dark Mode)
+- Homepage / Landing Page
+- Product Listing Page with Filters
+- Product Description Page
+- Cart Management Page
+- Wishlist/Favourites Management Page
+- Login / Logout Page
+- Signup Page
+<br />
+
+
+## 🚀 Features
+- Login and Signup User Account
+- Product Filters Based on Price, Category, Size, Color and Gender
+- Product Sorting Based on Price, Rating and Name
+- Product Filtering and Sorting works together 
+- Wishlist Add and Remove Items
+- Cart Add and Remove Items 
+<br />
+
+
