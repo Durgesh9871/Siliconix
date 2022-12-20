@@ -8,6 +8,15 @@ import Home from "../Components/Home/Home";
 import Admin from "../Components/SignUp/Admin/Admin";
 import User from "../Components/SignUp/User/User";
 import Admin_Dashboard from "../Components/Admin/Admin_Dashboard";
+
+import Cart from '../Page/Durgesh_Folder/Pages/Cart'
+import cartStore from '../Danish Pinjari/store/store';
+import { Provider } from 'react-redux';
+import WishList from '../Page/Durgesh_Folder/Pages/WishList';
+// import Login from './../Components/Login/Login';
+
+
+
 const AllRoutes = () => {
   return (
     <div>
@@ -24,6 +33,23 @@ const AllRoutes = () => {
         <Route path="/admin_signup" element={<Admin />} />
         <Route path="/user_signup" element={<User />} />
         <Route path="/admin" element={<Admin_Dashboard />} />
+        {/* by Danish Pinjari */}
+        <Route
+					path="/cartpage"
+					element={
+						<Provider store={cartStore}>
+							<Cart />
+						</Provider>
+					}
+				></Route>
+				<Route
+					path="/wishlist"
+					element={
+						<Provider store={cartStore}>
+							<WishList />
+						</Provider>
+					}
+				></Route>
       </Routes>
     </div>
   );
