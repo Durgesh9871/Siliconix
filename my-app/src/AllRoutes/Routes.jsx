@@ -2,9 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import React from "react";
 import { ProductPage } from "../Page/Durgesh_Folder/Pages/ProductPage";
 import { SinglePageProduct } from "../Page/Durgesh_Folder/Pages/SinglePageProduct";
-import { HomePage } from "../Page/Durgesh_Folder/Pages/homePage";
+//import { HomePage } from "../Page/Durgesh_Folder/Pages/homePage";
 import { SearchBar } from "../Page/Manisha_Wadhe_Folder/SearchBar";
-import Home from "../Components/Home/Home";
+//import Home from "../Components/Home/Home";
+import Home from "../R sai kiran/Home"
 import Admin from "../Components/SignUp/Admin/Admin";
 import User from "../Components/SignUp/User/User";
 import Admin_Dashboard from "../Components/Admin/Admin_Dashboard";

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Navbar.css';
+
 import { ImMenu } from 'react-icons/im';
 import { ImCross } from 'react-icons/im';
 import {
@@ -30,6 +30,8 @@ import { ChevronDownIcon } from '@chakra-ui/icons';
 
 //* added by Danish Pinjari
 import { useSelector } from 'react-redux';
+import './Navbar.css';
+
 
 const Navbar = () => {
 	//*--------------- by Danish Pinjari

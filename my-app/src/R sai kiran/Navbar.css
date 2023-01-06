@@ -1,0 +1,57 @@
+
+.MenuLink{
+    margin-top: "50px";
+    margin-bottom: 100px;
+    color: blue;
+}
+
+.top-nav{
+    display: flex;
+    font-size: larger;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding:1rem 2rem
+}
+.top-btn{
+    font-size: 25px;
+    font-weight: bold;
+    size: 25px;
+    
+}
+.NavbarSearch{
+    width: 70%;
+}
+
+@media(max-width: 600px) {
+      .top-btn{
+        font-size: 15px;
+        size: 20px;
+      }
+      .account{
+        display: none;
+      }
+      .top-nav{
+        gap: 10px;
+        padding: 1rem 0.5rem;
+      }
+    
+}
+/*
+
+@media only screen and (max-width: 500px) {
+    .top-btn{
+        font-size: 10px;
+        font-weight: bold;
+        
+    }
+    .NavbarSearch{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .NavbarSearch{
+        width: 100%;
+    }
+}
+*/

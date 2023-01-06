@@ -14,7 +14,8 @@ function App() {
 				<Navbar />
 			</Provider>
 			<AllRoutes />
-			<Footer />
+	<Footer />
+			
 		</div>
 	);
 }
