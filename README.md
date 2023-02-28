@@ -45,8 +45,8 @@
 
 ## 🚀 Features
 - Login and Signup User Account
-- Product Filters Based on Price, Category, Size, Color and Gender
-- Product Sorting Based on Price, Rating and Name
+- Product Filters Based on Price, Category, Color and Rating
+- Product Sorting Based on Price
 - Product Filtering and Sorting works together 
 - Wishlist Add and Remove Items
 - Cart Add and Remove Items 
