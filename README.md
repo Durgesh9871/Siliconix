@@ -1,6 +1,6 @@
 <h1 align="center">Siliconix</h1>
 
-<h3 align="center">It's a react E-commerce web application with all the major functionalities</h3>
+<h3 align="center">This website sells electronics such as laptops, phones, refrigerators, and TVs. Customers can browse, purchase, and receive their products online or in-store.</h3>
 
 <br />
 
