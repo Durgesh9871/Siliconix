@@ -53,7 +53,7 @@ const Navbar = () => {
 		<>
 			<div className="Navbar_container">
 				<nav>
-					<h2
+					<Link to="/"><h2
 						className="logo"
 						style={{
 							color: 'black',
@@ -64,7 +64,7 @@ const Navbar = () => {
 					>
 						{' '}
 						<span style={{ color: 'red' }}>S</span>iliconix
-					</h2>
+					</h2></Link>
 					<ul className={classes}>
 						<li>
 							<Link
@@ -119,16 +119,7 @@ const Navbar = () => {
 								Cart {items.length}
 							</Link> */}
 						</li>
-						<li>
-							<Link
-								to={'wishlist'}
-								onClick={() => {
-									setclasses('donotshownavbar');
-								}}
-							>
-								Wish List
-							</Link>
-						</li>
+						
 						{LoginInfo.length > 0 ? (
 							LoginInfo[0].type === 'ADMIN' ? (
 								<li>
